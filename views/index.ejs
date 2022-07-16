@@ -1,0 +1,106 @@
+
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Thought Exchanger</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="landing is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header" class="alt">
+					<h1><a href="/">Thought Exchanger</a> by <a href="https://twitter.com/DekotaDeCoder" target="_blank">DekotaDeCoder</a></h1>
+					<nav id="nav">
+						<ul>
+							<li><a href="/">Home</a></li>
+							<li>
+								<a href="#" class="icon solid fa-angle-down">Other Projects</a>
+								<ul>
+									<li><a href="https://100devsfollowalong.netlify.app/" target="_blank">100DevsFollowAlong</a></li>
+                                    <li><a href="https://dietarylookup.netlify.app/" target="_blank">Dietary Look-up</a></li>
+									<li><a href="https://pokemonlottery.netlify.app/" target="_blank">Pokemon Lottery</a></li>
+									<li><a href="https://bigmoonscrypto.netlify.app/" target="_blank">Moons Crypto</a></li>
+									<!-- <li>
+										<a href="#">Submenu</a>
+										<ul>
+											<li><a href="#">Option One</a></li>
+											<li><a href="#">Option Two</a></li>
+											<li><a href="#">Option Three</a></li>
+											<li><a href="#">Option Four</a></li>
+										</ul>
+									</li> -->
+								</ul>
+							</li>
+							<li><a href="#cta" class="button">Add</a></li>
+						</ul>
+					</nav>
+				</header>
+
+			<!-- Banner -->
+				<section id="banner">
+					<h2>The Thought Exchanger</h2>
+					<p>Where you can get random thoughts from random folks and <br> add your own thoughts to the thought pool.</p>
+					<ul class="actions special">
+						<li><a href="/" id="getThoughtButton" class="button primary">Get Thought</a></li>
+						<li><a href="#cta" class="button">Add Thought</a></li>
+					</ul>
+				</section>
+
+			<!-- Main -->
+				<section id="main" class="container">
+
+					<section class="box special">
+						<header class="major">
+                            <%  { %>
+                                <% console.log(info[0].thought) %> 
+                                <h2><%= info[0].thought %></h2>
+                              <% } %>
+					</section>
+			<!-- CTA -->
+				<section id="cta">
+
+					<h2>Add your thought</h2>
+					<p>Add your thought to the thought pool for others to pull</p>
+
+					<form action="/addThought" method="POST">
+						<div class="row gtr-50 gtr-uniform">
+							<div class="col-8 col-12-mobilep">
+								<input type="text" name="yourThought" id="email" placeholder=" Your Thought" />
+							</div>
+							<div class="col-4 col-12-mobilep">
+								<input type="submit" value="Add" class="fit" />
+							</div>
+						</div>
+					</form>
+
+				</section>
+
+			<!-- Footer -->
+				<footer id="footer">
+					<ul class="icons">
+						<li><a href="https://twitter.com/DekotaDeCoder" target="_blank" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="https://github.com/DekotaNelson/thought-exchanger" target="_blank" class="icon brands fa-github"><span class="label">Github</span></a></li>
+                        <li><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/dekotanelson" class="icon brands fa-linkedin-in"><span class="label">Linkedin</span></a></li>
+                        <li><a href="mailto:nelson.dekota+thought-exchanger@gmail.com?subject=Hello%20from%20Dekota%27s%20site" class="icon fa-envelope"><span class="label">Email Me</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Thought Exchanger. All rights reserved.</li><li>Brought to you by: DekotaDeCoder</a></li>
+					</ul>
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
